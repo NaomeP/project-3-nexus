@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .movie {
+            border: 1px solid #ddd;
+            padding: 1em;
+            margin: 1em;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Movie Ticket Booking</h1>
+    </header>
+
+    <section>
+        <div class="movie-container">
+            <div class="movie">
+                <h2>kushi movie</h2>
+                <p>Genre: romance</p>
+                <p>Showtimes:</p>
+                <ul>
+                    <li>12:00 PM</li>
+                    <li>3:00 PM</li>
+                    <li>6:00 PM</li>
+                </ul>
+                <button onclick="bookTicket('Movie Title 1')">Book Now</button>
+            </div>
+
+            <div class="movie">
+                <h2>gilli movie</h2>
+                <p>Genre: action</p>
+                <p>Showtimes:</p>
+                <ul>
+                    <li>1:00 PM</li>
+                    <li>4:00 PM</li>
+                    <li>7:00 PM</li>
+                </ul>
+                <button onclick="bookTicket('Movie Title 2')">Book Now</button>
+            </div>
+
+            <!-- Add more movie entries as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Movie Ticket Booking. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function bookTicket(movieTitle) {
+            alert('Booking for ' + movieTitle + ' is successful!');
+            // Add additional logic for booking process (e.g., redirect to a booking page)
+        }
+    </script>
+</body>
+
+</html>
